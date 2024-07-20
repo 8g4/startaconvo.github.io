@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Topics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Halaman Pertama -->
+    <div id="page1" class="page">
+        <div class="input-container">
+            <h1 align="left" for="nameInput">Tulis nama lawan bicara untuk cari topik!</h1>
+            <p>Insert your friend name to search for topics!</p>
+            <input type="text" id="nameInput" placeholder="Type name here...">
+            <button onclick="showTopic()">&#x27A4;</button>
+        </div>
+    </div>
+
+    <!-- Halaman Kedua -->
+    <div id="page2" class="page" style="display:none;">
+        <h1 class="input-container">
+            <p id="topicOutput"></p>
+            <button onclick="goBack()">&#x27A4;</button>
+        </h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
